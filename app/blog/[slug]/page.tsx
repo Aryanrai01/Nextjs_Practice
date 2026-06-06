@@ -13,7 +13,7 @@ export function generateStaticParams() {
 
 
 //Dynamic SEO metadata generation
-export async function generateMetadata({ params }: Props): Promise<metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const {slug} = await params;
   const post = getPostBySlug(slug)
 
