@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getPostBySlug, getAllPosts } from '../posts'
 import Link from 'next/link'
-import type  {metadata} from "next"
+import type  {Metadata} from "next"
 
 
 type Props = {  params: Promise<{ slug: string }> }
