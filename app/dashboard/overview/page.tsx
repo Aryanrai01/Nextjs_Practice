@@ -131,7 +131,7 @@ export default function OverviewPage() {
                     <p className="text-sm font-medium opacity-90">{stat.label}</p>
                     <p className="text-3xl font-bold mt-1">{stat.value}</p>
                   </div>
-                  <IconComponent className="w-12 h-12 opacity-80" />
+                  <IconComponent/>
                 </div>
               </div>
               <div className="px-4 py-3 bg-gray-50">

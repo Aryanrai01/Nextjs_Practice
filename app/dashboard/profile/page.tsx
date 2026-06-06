@@ -59,7 +59,7 @@ export default function ProfilePage() {
     position: 'Senior Developer',
   })
 
-  const handleInputChange = (e) => {
+  const handleInputChange = ( e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({
       ...prev,

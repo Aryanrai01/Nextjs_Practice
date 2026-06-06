@@ -154,7 +154,7 @@ export default function ProjectsPage() {
                       <p className="text-base font-semibold text-slate-900">{project.name}</p>
                       <p className="mt-2 text-sm leading-6 text-slate-600">{project.description}</p>
                     </div>
-                    <span className={`rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] ${statusStyles[project.status]}`}>
+                    <span className={`rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] ${statusStyles[project.status as keyof typeof statusStyles]}`}>
                       {project.status}
                     </span>
                   </div>

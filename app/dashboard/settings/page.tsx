@@ -1,8 +1,12 @@
 "use client"
 
 import React, { useState } from "react"
-
-const Toggle = ({ checked, onChange, label }) => (
+type ToggleProps = {
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+  label: string;
+};
+const Toggle = ({ checked, onChange, label }: ToggleProps) => (
 	<label className="flex items-center gap-3">
 		<div className="relative">
 			<input
@@ -40,7 +44,7 @@ export default function SettingsPage() {
 		weeklySummary: true,
 	})
 
-	const handleProfileChange = (e) => {
+	const handleProfileChange = ( e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
 		const { name, value } = e.target
 		setProfile((p) => ({ ...p, [name]: value }))
 	}

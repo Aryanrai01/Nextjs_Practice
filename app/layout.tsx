@@ -8,7 +8,7 @@ export const metadata:Metadata={
     template:"%s | Aryan's Next Practice" 
   },
   description:"This is a practice project for Next.js by Aryan",
-  opengraph:{
+  openGraph:{
     siteName:"aryan-next-practice",
     
   }
