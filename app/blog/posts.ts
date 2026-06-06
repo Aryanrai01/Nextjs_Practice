@@ -77,7 +77,7 @@ const generatedPosts = Array.from({ length: 60 }, (_, i) => {
 
 export const posts = [...legacyPosts, ...generatedPosts]
 
-export function getPostBySlug(slug) {
+export function getPostBySlug(slug:string) {
   return posts.find((p) => p.slug === slug)
 }
 
